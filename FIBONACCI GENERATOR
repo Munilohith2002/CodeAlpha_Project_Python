@@ -1,0 +1,17 @@
+def fibonacci_sequence(n):
+    sequence = []
+    a, b = 0, 1
+    for _ in range(n):
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
+
+# Taking input from the user
+num_terms = int(input("Enter the number of terms for the Fibonacci sequence: "))
+
+# Generating the Fibonacci sequence
+fib_sequence = fibonacci_sequence(num_terms)
+
+# Displaying the sequence
+print(f"Fibonacci sequence with {num_terms} terms:")
+print(fib_sequence)
